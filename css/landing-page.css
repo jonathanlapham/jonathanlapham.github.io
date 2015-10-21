@@ -109,6 +109,15 @@ img.avatar {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.content-post-a {
+    background-color: #f8f8f8;
+}
+
+.content-post-b {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
 .section-heading {
     margin-bottom: 30px;
 }

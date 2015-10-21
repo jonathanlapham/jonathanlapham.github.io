@@ -1,7 +1,18 @@
 <div class="notelist">
     {% for post in site.posts %}
-    <ul class="listnotes list-unstyled">
-      <li><span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-    </ul>
+        {% assign isodd = forloop.index | modulo: 2 %}
+        {% if isodd == 1 %}
+            <div class="content-post-a">
+        {% else %}
+            <div class="content-post-b">
+        {% endif %}
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p class="author">
+                <span class="date">{{ post.date }}</span>
+            </p>
+            <div class="content">
+                {{ post.content }}
+            </div>
+        </div>
     {% endfor %}
 </div><!--/.notelist -->
