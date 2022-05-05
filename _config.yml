@@ -1,12 +1,34 @@
 # Site settings
 title: Jonathan Lapham
 email: jonathan@lapham.org.uk
-description: > # this means to ignore newlines until "baseurl:"
-  Jonathan Lapham personal website
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.lapham.org.uk" # the base hostname & protocol for your site
-github_username:  jonathanlapham
+author: Jonathan Lapham
+description:
+url: www.lapham.org.uk
 
-permalink: /notes/:year/:month/:day/:title
 # Build settings
 markdown: kramdown
+permalink: /notes/:year/:month/:day/:title
+plugins:
+  - jekyll-feed
+# permalink: :title/
+sass:
+  sass_dir: css
+
+header_pages:
+  - notes.md
+  - pgp.md
+  - about.md
+
+contact_links:
+  - name: "LinkedIn"
+    icon: "bi-linkedin"
+    href: "https://www.linkedin.com/in/jonathanlapham"
+  - name: "Facebook"
+    icon: "bi-facebook"
+    href: "https://www.facebook.com/jonathan.lapham"
+  - name: "Email"
+    icon: "bi-envelope"
+    href: "&#109;ai&#108;to&#58;jon&#97;%74&#104;%&#54;1&#37;&#54;E&#64;la%70ham&#46;org.uk"
+  - name: "PGP Key"
+    icon: "bi-key"
+    href: "pgp"

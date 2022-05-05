@@ -1,23 +1,21 @@
 <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <ul class="list-inline">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="/notes">Notes</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted small">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}.&nbsp;&nbsp;All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
+<!-- <div class="container-fluid m-0 p-0"> -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/notes">Notes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+    </ul>
+    <div class="text-muted small">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}.&nbsp;&nbsp;All Rights Reserved.</div>
+  </div>
+</nav>
+<!-- </div> -->
+
+<script src="/js/bootstrap.bundle.min.js"></script>

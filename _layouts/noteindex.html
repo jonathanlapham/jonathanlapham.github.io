@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="notes">
+
+  <div class="notelist">
+    {% for post in site.posts %}
+    <div class="container my-3">
+      <h1 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}</h6>
+      {{ post.content }}
+      <div class="border-top border-light border-1 my-4"></div>
+    </div>
+    {% endfor %}
+  </div>
+  <!--/.notelist -->
+
+</div> <!-- .notes -->
